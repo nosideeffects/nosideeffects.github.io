@@ -3,3 +3,4 @@ plugins:
   - jekyll-remote-theme
 title: "(root) -> terminal"
 description: "Code, math, and plants"
+mermaid: true
