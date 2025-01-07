@@ -91,7 +91,7 @@ flowchart LR
 > Figure: Workflow with a step for automated and manual test cases
 
 Our team was reaching new heights of productivity:
-there was a state of every requirement, a test for every user journey,
+there was a state for every requirement, a test for every user journey,
 and the test coverage of our code was always nearing 100%.
 Each developer was churning out increasing amounts of code and documentation. 
 
@@ -186,7 +186,7 @@ We need to formalize those properties we determine must always hold.
 Essentially, we must minimize the state we manage.
 This will help us confidently make changes without risking instability.
 
-Let's re-condense our process graph but add some potential steps from the refiner stage.
+Let's re-condense our process graph but add some potential steps from the refinement stage.
 
 ```mermaid
 flowchart LR
