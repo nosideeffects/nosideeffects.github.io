@@ -4,7 +4,7 @@ title: "How to develop software"
 date: 2025-01-07
 categories: 
   - development 
-  - software
+  - code
 ---
 
 # How to develop software
