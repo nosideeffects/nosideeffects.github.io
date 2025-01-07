@@ -68,7 +68,9 @@ flowchart LR
 A few sprints worth of prototyping later, and we have a mostly functional user interface. A user can now view each of the states we've defined and modify the states we've allowed. However, our product team has come up with some great new ideas! We get back to work defining the requirements for them, the state they will require, and eventually implement new portions of the user interface.
 
 We encounter a problem that slows us down: new states often break parts of the user interface.
-We decide that we need to start adding automated tests for each requirement, as well as documenting intended user interface flows, so we can more easily detect when we broke something. This strategy seemed to have a positive effect, with fewer bugs being introduced in our prototypes.
+We decide that we need to start adding automated tests for each requirement, as well as documenting intended user interface flows, so we can more easily detect when we broke something.
+
+This strategy seemed to have a positive effect, with fewer bugs being introduced in our prototypes.
 
 ```mermaid
 flowchart LR
@@ -88,12 +90,31 @@ flowchart LR
 ```
 > Figure: Workflow with a step for automated and manual test cases
 
-Our team was reaching new heights of productivity: there was a state of every requirement, a test for every user journey, and the test coverage of our code was always nearing 100%. Each developer was churning out increasing amounts of code and documentation. The program eventually felt complete. Tests were upholding the requirements, all our ideas had materialized as features within the user interface, and no one testing had encountered any serious bugs recently. So, we released.
+Our team was reaching new heights of productivity:
+there was a state of every requirement, a test for every user journey,
+and the test coverage of our code was always nearing 100%.
+Each developer was churning out increasing amounts of code and documentation. 
 
-Reality hit. Users started complaining about broken flows, confusing interactions, and unmet expectations. They were using our program in ways we had not expected, following flows that we had not accounted for. Even worse, a lot of the requests were incompatible with our program states; many of the potential resolutions to issues would require changes to existing requirements.
+The program eventually felt complete.
+Tests were upholding the requirements, all our ideas had materialized as features within the user interface,
+and no one testing had encountered any serious bugs recently.
+
+So, we released.
+
+Then reality hit. 
+
+Users started complaining about broken flows, confusing interactions, and unmet expectations.
+They were using our program in ways we had not expected, following flows that we had not accounted for.
+Even worse, a lot of the requests were incompatible with our program states;
+many of the potential resolutions to issues would require changes to existing requirements.
 
 Updated requirements would require major changes to the program state. We’d also need to update or replace all our automated tests.
-Every modification would need to be documented, and existing documentation revised. The number of changes began to seem overwhelming, almost insurmountable. When we review our final development diagram, it appears we've included everything that best practices recommend. What went wrong? How could we have avoided this?
+Every modification would need to be documented, and existing documentation revised. 
+
+The number of changes began to seem overwhelming, almost insurmountable.
+When we review our final development diagram, it appears we've included everything that best practices recommend.
+What went wrong?
+How could we have avoided this?
 
 The core issue is that only now, after release, we’ve stepped into the analysis phase of development. Before this, our process focused entirely on the _discovery_ phase.
 
@@ -206,14 +227,22 @@ flowchart LR
 ```
 > Figure: Workflow with example steps that fall in the refinement phase
 
-Now, this flow better represents a sustainable development cycle. Sadly, many tasks in the refinement stage are dismissed as 'maintenance,' especially by non-technical managers working with junior engineers.
-The term's vagueness and lack of value in modern business thinking has caused this critical stage to be ignored, undervalued, and underfunded.
+Now, this flow better represents a sustainable development cycle. 
+
+Sadly, many tasks in the refinement stage are dismissed as 'maintenance,'
+especially by non-technical managers working with junior engineers.
+The term's vagueness and lack of value in modern business thinking has caused this critical stage to be ignored,
+undervalued, and underfunded.
 Sooner or later, the lack of transition to this phase will result in its unexpected emergence as a system failure.
 
 Entering the refinement stage is inevitable, but it’s best to do so often. The longer you wait, the more likely productive work will turn into wasted effort.
 Avoiding code analysis and simplification can create an illusion of productivity but often leads to rewrites, or worse, project failure.
 
+
 ---
 
-Next time, we’ll separate development ideas into beliefs and provable facts. We’ll use concrete evidence to model development _as_ computation.
-We will more precisely define common terms as we go along.
+But what _is_ refinement? And how is it different from discovery?
+
+Next time, we’ll begin to define these concepts more rigorously,
+and separate ideas about development into beliefs and provable facts.
+We’ll use concrete evidence to model development _as_ computation.
