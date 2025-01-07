@@ -16,6 +16,8 @@ Most importantly,
 we’ll build a mental toolkit to distinguish genuinely hard problems from those that are just _new_ or _unfamiliar_.
 Understanding both discovery and refinement phases is critical for sustaining long-term development and avoiding the pitfalls many teams encounter.
 
+---
+
 ## Development best practices: A short story
 
 Let's begin with a story. It is about "us," a team of developers, working on a new project. It approximates a common experience we might find at any modern company.
@@ -145,7 +147,10 @@ flowchart LR
 Complexity arises, but something important is missing: the sheer amount of work we’ve already done.
 Our flow chart is the _generalization_ of the process we used to develop our current program.
 The program itself—including its concepts, requirements, documentation, tests, and prototypes—represents the current _state_ of development.
-At the time of our release, the state we had created was enormous and accounted for what _seemed_ like **everything**. It gave us the false impression that our program was robust, correct, and complete. But with our current process, _all_ that state must be included in _every_ step. All it took was a non-trivial change in requirements to almost completely paralyze developmental progress.
+
+At the time of our release, the state we had created was enormous and accounted for what _seemed_ like **everything**. 
+It gave us the false impression that our program was robust, correct, and complete. But with our current process, _all_ that state must be included in _every_ step. 
+All it took was a non-trivial change in requirements to almost completely paralyze developmental progress.
  
 > For example, a new feature requiring incompatible workflows may invalidate our previous program states, breaking existing functionality.
 
