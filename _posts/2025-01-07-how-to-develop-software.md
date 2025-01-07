@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title: "How to develop software"
 date: 2025-01-07
 categories: 
